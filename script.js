@@ -26,9 +26,9 @@ function showTime() {
     min = min < 10 ? "0" + min : min;
     sec = sec < 10 ? "0" + sec : sec;
  
-    let currentTime = day +"/"+ month+"/"+year +", " + hour + ":"
-            + min + ":" + sec +" " + am_pm;
- 
+    // let currentTime = day +"/"+ month+"/"+year +", " + hour + ":"
+    //         + min + ":" + sec +" " + am_pm;
+ let currentTime = `${day}/${month}/${year}, ${hour}:${min}:${sec} ${am_pm}`;
     clock.innerHTML = currentTime;
 }
 showTime();
